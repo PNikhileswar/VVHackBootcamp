@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        input, button {
+            padding: 15px;
+            margin: 15px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Factorial Calculator</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateFactorial()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function calculateFactorial() {
+            const number = document.getElementById('numberInput').value;
+            const result = document.getElementById('result');
+
+            let factorial = 1;
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+
+            result.textContent = "Factorial of " + number + " is " + factorial + ".";
+        }
+    </script>
+</body>
+</html>
