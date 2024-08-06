@@ -5,5 +5,5 @@ function sumOfDigits(num) {
         .map(Number)      
         .reduce((acc, curr) => acc + curr, 0);  
 }
-console.log(sumOfDigits(1234));  
-console.log(sumOfDigits(5678)); 
+console.log(sumOfDigits(9345));  
+console.log(sumOfDigits(68509298)); 

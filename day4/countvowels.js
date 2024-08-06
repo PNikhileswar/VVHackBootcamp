@@ -11,5 +11,5 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels("hello"));      
-console.log(countVowels("javascript")); 
+console.log(countVowels("Nikhileswar Palivela"));      
+console.log(countVowels("java script :)")); 

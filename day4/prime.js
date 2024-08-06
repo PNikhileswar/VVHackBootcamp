@@ -9,5 +9,5 @@ function isPrime(num) {
 
     return true;
 }
-console.log(isPrime(11));  
-console.log(isPrime(4)); 
+console.log(isPrime(10000000000000061));  
+console.log(isPrime(-7)); 
